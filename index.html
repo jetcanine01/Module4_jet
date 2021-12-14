@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;   
+   }
+    </style>
+    <H1>This is the solution to module 4</H1>
+    <script>
+        const bye = new Object();
+	    const say = 'Good Bye';
+
+	    bye.speak = (name) => console.log(`${say} ${name}`);
+
+
+        const hello = new Object();
+	    const say1 = 'Hello';
+
+	    hello.speak = (name) => console.log(`${say1} ${name}`);
+             
+        const names = ["Jet" , "Sharon", "Kobe", "Jason", "Bob", "James", "Jesse", "Harry", "Caleb"];
+
+	    let i, initial;
+
+	    for (i = 0; i < names.length; i++) {
+		initial = names[i].charAt(0).toLowerCase();
+
+		if (initial === 'j') {
+			bye.speak(names[i]);
+			continue;
+		}
+
+		hello.speak(names[i]);
+	}
+    </script>
+</body>
+</html>
